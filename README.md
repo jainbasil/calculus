@@ -1,10 +1,6 @@
-# calculus
+# jekyll-calculus-theme
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
-
-To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
-
-TODO: Delete this and the text above, and describe your gem
+This is a minimalistic theme for personal blogs, with support for Malayalam font (Gayathri). It is built on top of [Gesko](https://github.com/P0WEX/Gesko) theme.
 
 
 ## Installation
@@ -12,13 +8,13 @@ TODO: Delete this and the text above, and describe your gem
 Add this line to your Jekyll site's `Gemfile`:
 
 ```ruby
-gem "calculus"
+gem "jekyll-calculus-theme"
 ```
 
 And add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
-theme: calculus
+theme: jekyll-calculus-theme
 ```
 
 And then execute:
@@ -27,7 +23,7 @@ And then execute:
 
 Or install it yourself as:
 
-    $ gem install calculus
+    $ gem install jekyll-calculus-theme
 
 ## Usage
 
