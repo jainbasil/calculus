@@ -2,11 +2,11 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "jekyll-calculus-theme"
-  spec.version       = "0.1.0"
+  spec.version       = "0.1.1"
   spec.authors       = ["Jain Basil Aliyas"]
   spec.email         = ["jainbasil@gmail.com"]
 
-  spec.summary       = "Lightweight theme for personal blogs"
+  spec.summary       = "Minimalistic theme for personal blogs with Gayathri font support (Malayalam)"
   spec.homepage      = "https://jainbasilaliyas.in"
   spec.license       = "MIT"
 
