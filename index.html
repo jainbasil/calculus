@@ -1,0 +1,25 @@
+---
+layout: default
+---
+<section id="intro">
+    <div class="flex-row-between">
+        <h1>{{ site.title }}</h1>
+        <button title="Change theme" id="theme-toggle" onclick="modeSwitcher()">
+            <div></div>
+        </button>
+    </div>
+    <div class="bio">
+        <p>{{ site.description }}</p>
+    </div>
+    <div class="posts">
+        <h2>Blog Posts</h2>
+        <ul>
+            {% for post in site.posts %}
+            <li>
+                <a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a>
+                <time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%b %d, %Y" }}</time>
+            </li>
+            {% endfor %}
+        </ul>
+    </div>
+</section>
