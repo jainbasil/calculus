@@ -153,7 +153,7 @@ html[data-theme="dark"] {
 }
 
 body {
-	font-family: 'Lora', 'Gayathri', sans-serif;
+	font-family: 'IBM Plex Sans', 'Gayathri', sans-serif;
 	text-rendering: optimizeLegibility;
 	line-height: 1.75;
 	color: var(--main-text-color);
@@ -175,6 +175,8 @@ a {
 
 code,
 pre {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.8rem;
 	background: var(--code-bg-color);
 	margin: 0 -27px;
 	border-width: 1px;
