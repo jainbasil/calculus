@@ -1,0 +1,75 @@
+# Example _config.yml for jekyll-calculus-theme
+# Copy this to your Jekyll site and customize
+
+title: Your Blog Title
+description: Your blog description
+author: Your Name
+email: your.email@example.com
+url: https://yourdomain.com
+baseurl: "" # subpath of your site, e.g. /blog
+
+# Build settings
+theme: jekyll-calculus-theme
+markdown: kramdown
+highlighter: rouge
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Theme settings
+show_excerpts: true
+
+# Pagination (optional)
+# paginate: 10
+# paginate_path: "/page:num/"
+
+# Exclude from processing
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+
+# Collections (optional)
+# collections:
+#   posts:
+#     output: true
+#     permalink: /:year/:month/:day/:title/
+
+# Defaults
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      comments: true
+  - scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+
+# Social links (optional)
+# github_username: yourusername
+# twitter_username: yourusername
+
+# SEO settings
+twitter:
+  username: yourusername
+  card: summary
+
+social:
+  name: Your Name
+  links:
+    - https://twitter.com/yourusername
+    - https://github.com/yourusername

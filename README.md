@@ -2,6 +2,16 @@
 
 This is a minimalistic theme for personal blogs, with support for Malayalam font (Gayathri). It is built on top of [Gesko](https://github.com/P0WEX/Gesko) theme.
 
+## Features
+
+- 🎨 Minimal and clean design
+- 🌓 Dark mode support
+- 📱 Fully responsive
+- 🔍 SEO optimized with jekyll-seo-tag
+- 📡 RSS feed with jekyll-feed
+- 🗺️ Automatic sitemap generation
+- 🔤 Malayalam font support (Gayathri)
+- ⚡ Fast and lightweight
 
 ## Installation
 
@@ -15,11 +25,16 @@ And add this line to your Jekyll site's `_config.yml`:
 
 ```yaml
 theme: jekyll-calculus-theme
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
 ```
 
 And then execute:
 
-    $ bundle
+    $ bundle install
 
 Or install it yourself as:
 
@@ -27,11 +42,83 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here. Describe your available layouts, includes, sass and/or assets.
+### Configuration
+
+Add these settings to your `_config.yml`:
+
+```yaml
+title: Your Blog Title
+description: Your blog description
+author: Your Name
+email: your.email@example.com
+url: https://yourdomain.com
+baseurl: "" # subpath of your site, e.g. /blog
+
+# Build settings
+theme: jekyll-calculus-theme
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+# Theme settings
+show_excerpts: true
+```
+
+### Layouts
+
+The theme includes the following layouts:
+
+- `default` - Base layout with theme toggle
+- `home` - Homepage layout
+- `page` - Page layout
+- `post` - Blog post layout
+- `about` - About page layout
+- `tag` - Tag archive layout
+
+### Creating Posts
+
+Create posts in the `_posts` directory with the following format:
+
+```markdown
+---
+layout: post
+title: "Your Post Title"
+date: 2025-12-09
+tags: [tag1, tag2]
+---
+
+Your post content here...
+```
+
+## Troubleshooting
+
+### Native Extension Build Errors
+
+If you encounter errors building native extensions (bigdecimal, json, etc.), you need to install Ruby development headers:
+
+**Fedora/RHEL:**
+```bash
+sudo dnf install ruby-devel gcc make
+```
+
+**Ubuntu/Debian:**
+```bash
+sudo apt-get install ruby-dev build-essential
+```
+
+**macOS:**
+```bash
+xcode-select --install
+```
+
+After installing the development tools, run `bundle install` again.
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/jainbasil/calculus. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](http://contributor-covenant.org) code of conduct.
+Bug reports and pull requests are welcome on GitHub at https://github.com/jainbasil/calculus. Please read [CONTRIBUTING.md](CONTRIBUTING.md) for details on our code of conduct and the process for submitting pull requests.
 
 ## Development
 

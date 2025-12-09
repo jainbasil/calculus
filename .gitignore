@@ -7,3 +7,11 @@ Gemfile.lock
 _config.yml
 _posts/*
 index.markdown
+.DS_Store
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+node_modules/
+vendor/
