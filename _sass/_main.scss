@@ -1,5 +1,3 @@
-@use "sass:color";
-
 *,
 :after,
 :before {
@@ -363,7 +361,7 @@ main {
       color: #a9a9a9;
 
       &:hover {
-        color: color.scale(#a9a9a9, $lightness: -25%);
+        color: #6a6a6a;
         transition: color 0.3s ease-in;
       }
     }

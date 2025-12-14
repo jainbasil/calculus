@@ -36,8 +36,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Version bumped to 0.3.0
 - Enhanced .gitignore with more comprehensive exclusions
 - Updated gemspec file patterns to include CHANGELOG and example config
-- Migrated Sass from deprecated @import to modern @use syntax
-- Replaced deprecated darken() function with color.scale() in Sass
+- Reverted to @import syntax for inline SCSS compilation compatibility
+- Used pre-calculated color values instead of Sass functions for better compatibility
 - Added logger gem dependency for Ruby 3.5+ compatibility
 
 ### Improved
