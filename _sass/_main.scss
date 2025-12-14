@@ -237,7 +237,7 @@ section {
 }
 
 section {
-	margin-top: 5.5rem;
+	margin-top: 3.5rem;
 }
 
 blockquote {
@@ -260,7 +260,7 @@ h4,
 h5 {
 	font-weight: bold;
 	font-size: 1rem;
-	margin-bottom: 1.5rem;
+	margin-bottom: 1rem;
 }
 
 section h1:first-child {
@@ -337,7 +337,7 @@ main {
 	display: flex;
 	max-width: 47rem;
 	margin: -5rem auto 0;
-	padding: 2.4rem 2rem;
+	padding: 2.4rem 2rem 1rem;
 	flex-direction: column;
 }
 
@@ -351,13 +351,16 @@ main {
 .social-footer {
   padding: 1rem;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
   justify-content: center;
   position: initial;
 
   .social-footer-icons {
      
     .fa {
-      font-size: 1.3rem;
+      font-size: 1.0rem;
       color: #a9a9a9;
 
       &:hover {
@@ -405,7 +408,7 @@ figcaption {
 }
 
 .bio {
-	margin-bottom: 5rem;
+	margin-bottom: 3.5rem;
 }
 
 ::selection {
@@ -750,5 +753,85 @@ $link-color: var(--link-color);
     box-shadow: 0 0 1px rgba(0,0,0,0.20);
     z-index: 15;
     
+  }
+}
+// Post list with excerpts
+.post-list-with-excerpts {
+  .post-item {
+    margin-bottom: 2.5rem;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid var(--very-light-text-color);
+
+    &:last-child {
+      border-bottom: none;
+    }
+
+    h3 {
+      margin-bottom: 0.5rem;
+      font-size: 1.3rem;
+      font-weight: bold;
+
+      a {
+        color: var(--main-text-color);
+        text-decoration: none;
+
+        &:hover {
+          color: var(--link-color);
+        }
+      }
+    }
+
+    time {
+      display: block;
+      margin-bottom: 0.75rem;
+      font-size: 0.9rem;
+      color: var(--medium-text-color);
+    }
+
+    .post-excerpt {
+      color: var(--main-text-color);
+      line-height: 1.6;
+      margin-top: 0.75rem;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+}
+
+// Pagination styles
+.pagination {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 3rem;
+  padding-top: 2rem;
+  border-top: 1px solid var(--very-light-text-color);
+
+  .pagination-link {
+    color: var(--link-color);
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border: 1px solid var(--link-color);
+    border-radius: 4px;
+    transition: all 0.3s ease;
+
+    &:hover:not(.disabled) {
+      background-color: var(--link-color);
+      color: white;
+    }
+
+    &.disabled {
+      color: var(--medium-text-color);
+      border-color: var(--very-light-text-color);
+      cursor: not-allowed;
+      opacity: 0.5;
+    }
+  }
+
+  .pagination-info {
+    color: var(--medium-text-color);
+    font-size: 0.9rem;
   }
 }
